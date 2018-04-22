@@ -1,0 +1,333 @@
+// @import "breakpoint";
+
+$global-width:100%; /* Used in Slider */
+$primary-color:#bd3b0c; /* Used in Profile */
+$white:white;/* Used in Slider */
+$light-gray:#bebebe; /* Used in Video Section */
+$medium-gray:grey; /* Used in Profile */
+$dark-gray:grey;
+
+$gray: #808080;
+$white: #fff;
+$highlight: #4ec6cd;
+$nav-text-color: $gray;
+$header-font:'Sanchez', serif;
+$vert-seperate: 4rem;
+
+
+/* General Design Start */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+
+body, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
+section{padding-top: 4em; padding-bottom: 4em; 
+
+ &.PeppyCodes_Video{background:linear-gradient(rgba($primary-color, 0.7),rgba($primary-color, 0.7)),
+    url(../images/OE7LK3011.jpg);color: #FFF;}
+	&.PeppyCodes_Profile{background-color: lighten($primary-color, 100);}
+&.PeppyCodes_Clients{background:linear-gradient(rgba(desaturate(lighten(#bd3b0c, 53), 68), 0.9),rgba(adjust_hue(saturate(lighten($primary-color, 57), 100), -2), 0.9)),
+    url(../images/OE7LK3011.jpg);}
+}
+
+
+/* General Design End */
+
+
+/* Menu Start */
+
+.title-bar{z-index: 10;}
+
+
+.top-bar, .top-bar ul, .top-bar ul li a 
+{background-color:$primary-color;color: #FFF;}
+
+
+
+
+
+$scrollhide-nav-transition-speed: 1s;
+
+.scrollhide-nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  transition: transform $scrollhide-nav-transition-speed cubic-bezier(0.86, 0, 0.07, 1);
+	z-index: 1;
+  &.hidden {
+    transform: translateY(-100%);
+  }
+}
+
+/* Menu End */
+
+/* Slider Start */
+
+
+
+/* Slider End */
+
+
+/* Video Section Start */
+
+.PeppyCodes_Video{p{font-size: 1.2em;}}
+
+
+/* Video Section End */
+
+/* Profile Section Start  */
+
+.PeppyCodes_Profile{h1,h2{color: $primary-color;} h2{font-size: 2em;}  p{font-size: 1.1em;}}
+
+// Source: https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+$social-brand-facebook: #3b5998;
+$social-brand-twitter: #55acee;
+$social-brand-linkedin: #007bb5;
+$about-the-author-text-transform: uppercase;
+$about-the-author-separator-width: 5rem;
+$about-the-author-separator-thickness: 0.125rem;
+
+.about-the-author {
+  background-color: $white;
+  padding: 1rem;
+  // border: 1px solid $medium-gray;
+
+  .separator-left {
+    text-align: left;
+    // @include clearfix;
+
+    &::after {
+      position: relative;
+      width: $about-the-author-separator-width;
+      border-bottom: $about-the-author-separator-thickness solid $primary-color;
+      margin: 0.3rem auto 0;
+      margin-left: 0;
+    }
+  }
+
+  .author-title {
+    text-transform: $about-the-author-text-transform;
+  }
+
+  .author-social {
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+
+    .fa-stack {
+      display: inline-block;
+
+      &.facebook {
+        color: lighten($social-brand-facebook, 10%);
+
+        &:hover,
+        &:focus {
+          color: $social-brand-facebook;
+        }
+      }
+
+      &.twitter {
+        color: lighten($social-brand-twitter, 10%);
+
+        &:hover,
+        &:focus {
+          color: $social-brand-twitter;
+        }
+      }
+
+      &.linkedin {
+        color: lighten($social-brand-linkedin, 10%);
+
+        &:hover,
+        &:focus {
+          color: $social-brand-linkedin;
+        }
+      }
+    }
+  }
+
+  .author-image {
+   
+  }
+
+
+
+}
+
+
+
+/* Profile Section End */
+
+/* Client Section Start */
+
+
+$card-user-container-image-size: rem-calc(190);
+
+  .card-user-avatar {
+    .user-image {
+    	padding-top: 1em;padding-bottom: 1em;
+      display: block;
+      margin: auto;
+      border-radius: 50%;
+      width: $card-user-container-image-size;
+      height: $card-user-container-image-size;
+      padding: rem-calc(15);
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+  .main-links {
+
+
+
+    h4 {
+      font-family: $header-font;
+
+      @media screen and (max-width: 39.9375em) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .columns {
+      position: relative;
+    }
+
+    .title-box {
+    	opacity: 0.8;
+      text-align: center;
+      background: white;
+      color: $highlight;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: .2rem 1rem;
+
+      .title-box-title {
+        margin-bottom: 0;
+        font-family: 'Lato', sans-serif;
+
+       &:hover {
+         color: darken($highlight, 25%);
+         transition: color .3s ease-in;
+       }
+      }
+    }
+      @media screen and (max-width: 39.9375em) {
+       img {
+         height: 250px;
+         display: block;
+         margin: 2rem auto;
+       }
+    }
+  }
+
+
+
+/* Client Section End */
+
+
+/* Footer Start */
+
+$marketing-site-footer-bg: darken($primary-color, 13);
+
+.marketing-site-footer {
+  background: $marketing-site-footer-bg;
+  color: lighten($marketing-site-footer-bg, 40%);
+  padding: 2rem 0 0;
+
+  .marketing-site-footer-menu-social a {
+    color: $white; font-size: 2em;
+  }
+
+  .column-block {
+    margin-bottom: 30px;
+  }
+
+  > .row {
+    margin-bottom: 1rem;
+  }
+
+  // @include breakpoint(small only) {
+  //   .columns {
+  //     margin-bottom: 2rem;
+  //   }
+  // }
+}
+
+.marketing-site-footer-name {
+  color: $white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.marketing-site-footer-title {
+margin-top: 1rem;
+  color: $white;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.marketing-site-footer-block {
+  display: flex;
+  margin-bottom: 1rem;
+
+  .fa {
+    font-size: 2rem;
+    color: darken($marketing-site-footer-bg, 20%);
+  }
+
+  p {
+    margin-left: 1rem;
+    line-height: 1.125rem;
+  }
+}
+
+.marketing-site-footer-bottom {
+  background: darken($marketing-site-footer-bg, 20%);
+  padding: 1rem 0;
+
+  p,
+  .menu {
+    margin-bottom: 0;
+  }
+
+  .marketing-site-footer-bottom-links {
+    justify-content: flex-end;
+
+    a {
+      color: lighten($marketing-site-footer-bg, 40%);
+    }
+
+    // @include breakpoint(medium down) {
+    //   justify-content: center;
+    // }
+  }
+
+  // @include breakpoint(medium down) {
+  //   text-align: center;
+  // }
+}
+
+
+
+/* Footer End */
