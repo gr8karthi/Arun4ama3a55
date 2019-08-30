@@ -92,7 +92,7 @@
 @font-face {
   font-family: 'classyfonts';
   src: url("../../fonts/classy-fonts.eot");
-  src: url("../../fonts/classy-fonts.eot") format("embedded-opentype"), url("../../fonts/classy-fonts.bin") format("truetype"), url("../../fonts/classy-fonts.woff") format("woff"), url("../../fonts/classy-fonts.svg") format("svg");
+  src: url("../../fonts/classy-fonts.eot") format("embedded-opentype"), url("../../fonts/classy-fonts.ttf") format("truetype"), url("../../fonts/classy-fonts.woff") format("woff"), url("../../fonts/classy-fonts.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 .icon-classy-nav-down-arrow {

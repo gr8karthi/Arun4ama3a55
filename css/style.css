@@ -3,7 +3,7 @@
 	src:url('fonts/ElegantIcons.eot');
 	src:url('fonts/ElegantIcons-1.eot') format('embedded-opentype'),
 		url('fonts/ElegantIcons.woff') format('woff'),
-		url('fonts/ElegantIcons.bin') format('truetype'),
+		url('fonts/ElegantIcons.ttf') format('truetype'),
 		url('fonts/ElegantIcons.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
